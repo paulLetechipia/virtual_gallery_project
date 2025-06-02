@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://your-rds-endpoint:5432/proyectoart
+    username: your_username
+    password: your_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+aws:
+  region: us-east-1
+  s3:
+    bucket: proyectoart-images
+    access-key: YOUR_ACCESS_KEY
+    secret-key: YOUR_SECRET_KEY
